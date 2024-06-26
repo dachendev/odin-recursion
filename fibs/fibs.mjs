@@ -1,4 +1,5 @@
 export function fibs(num) {
+  // base case
   if (num <= 0) {
     return [];
   }
@@ -16,6 +17,7 @@ export function fibs(num) {
     }
 
     if (step > 1) {
+      // add the previous two values
       result.push(result[step - 1] + result[step - 2]);
     }
 

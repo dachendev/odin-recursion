@@ -1,4 +1,5 @@
 export function fibsRec(num) {
+  // base case
   if (num <= 0) {
     return [];
   }
@@ -12,6 +13,9 @@ export function fibsRec(num) {
   }
 
   const result = fibsRec(num - 1);
+
+  // add the previous two values
   result.push(result[num - 2] + result[num - 3]);
+
   return result;
 }
